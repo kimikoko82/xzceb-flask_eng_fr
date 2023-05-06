@@ -11,13 +11,13 @@ load_dotenv()
 apikey = os.environ['apikey']
 url = os.environ['url']
 
-authenticator = IAMAuthenticator('hATye8kIc-vr_lH3iKaGIKxiD7-Us2eRCiFJM6iM7x8a')
+authenticator = IAMAuthenticator('')
 language_translator = LanguageTranslatorV3(
     version='2018-05-01',
     authenticator=authenticator   
 )
 
-language_translator.set_service_url('https://api.us-south.language-translator.watson.cloud.ibm.com')
+language_translator.set_service_url('')
 
 def english_to_french(english_text):
     """
